@@ -1,3 +1,18 @@
+
+# this is a temporary solution to fix the bug of solana completion
+# the bug is that the completion script is not compatible with zsh
+# so we need to convert the bash completion script to zsh completion script
+
+# HOW TO:
+# 1. run `solana completion` to get the bash completion script
+# 2. run `python3 solana_auto_complete_bash_to_zsh.py` to get the zsh completion script
+# 3. replace the zsh completion script in ~/.zsh/completions/_solana
+
+# example:
+# solana completion | python3 solana_auto_complete_bash_to_zsh.py > ~/.zsh/completions/_solana
+
+
+
 import re
 import sys
 
